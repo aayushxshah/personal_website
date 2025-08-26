@@ -14,7 +14,6 @@ export const help = async (args: string[]): Promise<string> => {
 \n${c}\n
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
 `;
 };
 
@@ -31,9 +30,9 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Welcome to my website!
 More about me:
-'sumfetch' - short summary.
 'resume' - my latest resume.
-'readme' - my github readme.`;
+'linkedin' - my linkedin profile.
+'github' - my github profile.`;
 };
 
 export const resume = async (args: string[]): Promise<string> => {
@@ -73,21 +72,14 @@ export const ls = async (args: string[]): Promise<string> => {
   return `behold:
 - your hopes
 - your dreams
-- a half-eaten sandwich
 - node_modules (do not open)`;
 };
 
 export const cd = async (args: string[]): Promise<string> => {
-  return `error: this directory is paywalled.
-type 'donate' to unlock premium folders™.`;
+  return `error: this directory is paywalled.`;
 };
 export const date = async (args: string[]): Promise<string> => {
   return new Date().toString();
-};
-
-export const vi = async (args: string[]): Promise<string> => {
-  return `ah yes, 'vi'. a museum piece.
-try 'vim' before it fossilizes.`;
 };
 
 export const vim = async (args: string[]): Promise<string> => {
@@ -96,13 +88,8 @@ real hackers use 'nvim'. or so they say on reddit.`;
 };
 
 export const nvim = async (args: string[]): Promise<string> => {
-  return `'nvim'? too mainstream.
-true 10x devs use 'emacs' with 42 plugins just to open a text file.`;
-};
-
-export const emacs = async (args?: string[]): Promise<string> => {
-  return `congrats, you’ve summoned emacs.
-enjoy your new operating system.`;
+  return `'nvim'? pfft.
+elite programmers edit hex directly.`;
 };
 
 export const code = async (args?: string[]): Promise<string> => {
@@ -116,7 +103,7 @@ export const cursor = async (args?: string[]): Promise<string> => {
 
 export const claude = async (args?: string[]): Promise<string> => {
   return `sorry, claude is behind a velvet rope.
-hire me and i’ll buy the VIP pass.`;
+hire me and i'll buy the VIP pass.`;
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
@@ -127,12 +114,25 @@ and also: sudo rm -rf / 😈`;
 // Banner
 export const banner = (args?: string[]): string => {
   return `
- █████╗  █████╗ ██╗   ██╗██╗   ██╗███████╗██╗  ██╗
-██╔══██╗██╔══██╗╚██╗ ██╔╝██║   ██║██╔════╝██║  ██║
-███████║███████║ ╚████╔╝ ██║   ██║███████╗███████║
-██╔══██║██╔══██║  ╚██╔╝  ██║   ██║╚════██║██╔══██║
-██║  ██║██║  ██║   ██║   ╚██████╔╝███████║██║  ██║
-╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝
+   █████████                                           █████     
+  ███░░░░░███                                         ░░███      
+ ░███    ░███   ██████   █████ ████ █████ ████  █████  ░███████  
+ ░███████████  ░░░░░███ ░░███ ░███ ░░███ ░███  ███░░   ░███░░███ 
+ ░███░░░░░███   ███████  ░███ ░███  ░███ ░███ ░░█████  ░███ ░███ 
+ ░███    ░███  ███░░███  ░███ ░███  ░███ ░███  ░░░░███ ░███ ░███ 
+ █████   █████░░████████ ░░███████  ░░████████ ██████  ████ █████
+░░░░░   ░░░░░  ░░░░░░░░   ░░░░░███   ░░░░░░░░ ░░░░░░  ░░░░ ░░░░░ 
+                          ███ ░███                               
+                         ░░██████                                
+                          ░░░░░░                                 
+  █████████  █████                █████                          
+ ███░░░░░███░░███                ░░███                           
+░███    ░░░  ░███████    ██████   ░███████                       
+░░█████████  ░███░░███  ░░░░░███  ░███░░███                      
+ ░░░░░░░░███ ░███ ░███   ███████  ░███ ░███                      
+ ███    ░███ ░███ ░███  ███░░███  ░███ ░███                      
+░░█████████  ████ █████░░████████ ████ █████                     
+ ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░                      
 
 Type 'help' to see the list of available commands.
 ${config.chat.active ? "Type 'chat' to talk to my AI assistant." : ''}
