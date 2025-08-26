@@ -36,24 +36,27 @@ More about me:
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`);
+  window.open(`${config.resume_url}`, '_blank');
   return 'Opening resume...';
 };
 
 // Contact
 export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`);
+  window.open(`mailto:${config.email}`, '_blank');
   return `Opening mailto:${config.email}...`;
 };
 
 export const github = async (args: string[]): Promise<string> => {
-  window.open(`https://github.com/${config.social.github}/`);
+  window.open(`https://github.com/${config.social.github}/`, '_blank');
 
   return 'Opening github...';
 };
 
 export const linkedin = async (args: string[]): Promise<string> => {
-  window.open(`https://www.linkedin.com/in/${config.social.linkedin}/`);
+  window.open(
+    `https://www.linkedin.com/in/${config.social.linkedin}/`,
+    '_blank',
+  );
 
   return 'Opening linkedin...';
 };
