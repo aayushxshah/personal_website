@@ -12,8 +12,8 @@
     "endpoint": "None"
   },
   "email": "aayush30shah@berkeley.edu",
-  "ps1_hostname": "guest",
-  "ps1_username": "aayush.app",
+  "ps1_hostname": "aayush.app",
+  "ps1_username": "guest",
   "repo": "https://github.com/aayushxshah/personal_website",
   "resume_url": "https://aayush-shah-resume.s3.us-east-2.amazonaws.com/Aayush+Shah+Resume.pdf",
   "colors": {
