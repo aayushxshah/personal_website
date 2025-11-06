@@ -30,7 +30,7 @@ export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}. 
 Welcome to my website!
 More about me:
-'resume' - my latest resume.
+'resume' - my resume.
 'linkedin' - my linkedin profile.
 'github' - my github profile.`;
 };
@@ -67,8 +67,7 @@ export const echo = async (args: string[]): Promise<string> => {
 };
 
 export const whoami = async (args: string[]): Promise<string> => {
-  return `you are a mysterious keyboard smasher.
-identity: unknown. vibes: immaculate.`;
+  return `${config.ps1_username}}`;
 };
 
 export const ls = async (args: string[]): Promise<string> => {
