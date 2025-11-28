@@ -36,7 +36,7 @@ More about me:
 };
 
 export const resume = async (args: string[]): Promise<string> => {
-  window.open(`${config.resume_url}`, '_blank');
+  window.open('/resume', '_blank');
   return 'Opening resume...';
 };
 
