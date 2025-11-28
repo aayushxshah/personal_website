@@ -1,13 +1,11 @@
-FROM node:18-alpine as base
+FROM node:18-alpine AS base
 
 WORKDIR /home/node/app
-COPY package.json ./
-RUN npm install -g npm-check-updates
-RUN ncu -u
-RUN npm install
+COPY package*.json ./
+RUN npm ci
 COPY . ./
 
-FROM base as production
+FROM base AS production
 
 ENV NODE_PATH=./build
 RUN npm run build

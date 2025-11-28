@@ -137,6 +137,7 @@ export const banner = (args?: string[]): string => {
  ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░                      
 
 Type 'help' to see the list of available commands.
+Type 'about' to get started.
 ${config.chat.active ? "Type 'chat' to talk to my AI assistant." : ''}
 `;
 };
