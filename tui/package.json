@@ -11,7 +11,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": ""
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.940.0",
@@ -33,7 +33,6 @@
     "eslint-plugin-next": "^0.0.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
-    "husky": "^8.0.1",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
