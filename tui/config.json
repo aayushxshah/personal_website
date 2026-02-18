@@ -17,22 +17,22 @@
   "resume_url": "https://aayush-shah-resume.s3.us-east-2.amazonaws.com/Aayush_Shah_Resume.pdf",
   "colors": {
     "light": {
-      "background": "#FBF1C9",
-      "foreground": "#3C3836",
-      "yellow": "#D79921",
-      "green": "#98971A",
-      "gray": "#7C6F64",
-      "blue": "#458588",
-      "red": "#CA2124"
+      "background": "#f0f4f8",
+      "foreground": "#1c2a3a",
+      "yellow": "#2b6cb0",
+      "green": "#2f855a",
+      "gray": "#5a6e82",
+      "blue": "#2b6cb0",
+      "red": "#c53030"
     },
     "dark": {
-      "background": "#2E3440",
-      "foreground": "#E5E9F0",
-      "yellow": "#5E81AC",
-      "green": "#A3BE8C",
-      "gray": "#88C0D0",
-      "blue": "#EBCB8B",
-      "red": "#BF616A"
+      "background": "#0d1117",
+      "foreground": "#e2e8f0",
+      "yellow": "#4a8fd9",
+      "green": "#a3be8c",
+      "gray": "#6e7f96",
+      "blue": "#88c0d0",
+      "red": "#bf616a"
     }
   }
 }

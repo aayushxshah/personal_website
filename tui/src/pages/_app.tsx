@@ -18,6 +18,7 @@ const App = ({ Component, pageProps }) => {
           key="viewport"
           maximum-scale="1"
         />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
       </Head>
 
       <div
