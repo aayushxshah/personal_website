@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import Head from 'next/head';
 import React from 'react';
 import config from '../../config.json';
@@ -37,6 +38,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
 
   return (
     <>
+      <Analytics />
       <Head>
         <title>{config.title}</title>
       </Head>
