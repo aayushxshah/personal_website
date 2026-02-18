@@ -1,7 +1,11 @@
 {
-  "name": "vite_react_shadcn_ts",
-  "private": true,
-  "version": "0.0.0",
+  "name": "tui.aayush.app",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "Aayush Shah",
+    "email": "aayush30shah@berkeley.edu"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
