@@ -13,7 +13,7 @@ export const help = async (args: string[]): Promise<string> => {
   return `Welcome! Here are all the available commands:
 \n${c}\n
 [tab]: trigger completion.
-[ctrl+l]/clear: clear terminal.\n
+clear: clear terminal.\n
 `;
 };
 
@@ -25,28 +25,12 @@ export const help = async (args: string[]): Promise<string> => {
 //   }
 // };
 
-// About
-export const about = async (args: string[]): Promise<string> => {
-  return `Hi, I am ${config.name}. 
-Welcome to my website!
-More about me:
-'resume' - my resume.
-'linkedin' - my linkedin profile.
-'github' - my github profile.`;
-};
-
-export const resume = async (args: string[]): Promise<string> => {
-  window.open('/resume', '_blank');
-  return 'Opening resume...';
-};
-
 // Contact
 export const email = async (args: string[]): Promise<string> => {
-  window.open(`mailto:${config.email}`, '_blank');
-  return `Opening mailto:${config.email}...`;
+  return `Email: ${config.email}`;
 };
 
-export const github = async (args: string[]): Promise<string> => {
+export const gh = async (args: string[]): Promise<string> => {
   window.open(`https://github.com/${config.social.github}/`, '_blank');
 
   return 'Opening github...';
@@ -59,6 +43,60 @@ export const linkedin = async (args: string[]): Promise<string> => {
   );
 
   return 'Opening linkedin...';
+};
+
+export const experiences = async (args: string[]): Promise<string> => {
+  return `experiences:
+  - company: Ciroos
+    location: Pleasanton, CA
+    role: Member of Technical Staff
+    dates: March 2026 - Present
+  - company: Ciroos
+    location: Pleasanton, CA
+    role: Software Engineering Intern
+    dates: July 2025 - March 2026
+    highlights:
+      - Designed an evaluation framework to verify an AI agent for SRE issue diagnosis and resolution.
+      - Built multi-domain test applications and evaluation pipelines simulating realistic Kubernetes, GCP, and AWS enterprise workloads and faults.
+      - Implemented a Kubernetes-native fault injection suite with 100+ deterministic scenarios and 90% fault coverage.
+      - Created 50+ gcloud-based fault scenarios to reproduce realistic production issues in GCP deployments.
+      - Recruited and managed engineering interns, assigning deliverables and providing technical guidance.
+  - company: Berkeleytime
+    location: Berkeley, CA
+    role: Software Engineer
+    dates: January 2025 - May 2026
+    highlights:
+      - UC Berkeley's most-used course catalog platform, serving 30,000+ users.
+      - Lead observability work using OpenTelemetry collectors, Prometheus, Jaeger, and Grafana.
+      - Instrumented platform services for end-to-end tracing and metrics aggregation across distributed systems.
+      - Helped migrate the legacy JavaScript stack to TypeScript, rebuild the frontend in React, and integrate GraphQL through Apollo Client.
+      - Developed a no-code internal dashboard that reduced site update time by 98%.
+  - company: Cisco
+    location: San Jose, CA
+    role: Software Engineering Intern
+    dates: May 2024 - August 2024
+    highlights:
+      - Built a documentation auto-generation tool with React, TypeScript, Node, and Next.js, increasing coverage by 35% and reducing creation time by 91%.
+      - Created an interactive UI rendering playground where users could learn and interact with documentation components.
+      - Designed CI/CD pipelines to automate documentation page generation and updates on new commits.
+      - Conducted code reviews and collaborated across teams to improve software quality and development processes.`;
+};
+
+export const education = async (args: string[]): Promise<string> => {
+  return `education:
+  - school: University of California, Berkeley
+    location: Berkeley, CA
+    degree: Data Science and Computer Science
+    graduation: May 2026
+    relevant_coursework:
+      - Data Structures and Algorithms
+      - Computer Architecture
+      - Discrete Mathematics and Probability Theory
+      - Principles and Techniques of Data Science
+      - Data Engineering
+      - Internet Architecture
+      - Data Mining
+      - Artificial Intelligence`;
 };
 
 // Typical linux commands
@@ -99,10 +137,6 @@ export const code = async (args?: string[]): Promise<string> => {
 installing 500mb update in the background... forever.`;
 };
 
-export const cursor = async (args?: string[]): Promise<string> => {
-  return `cursor? oh, you mean vscode with AI stickers slapped on?`;
-};
-
 export const claude = async (args?: string[]): Promise<string> => {
   return `sorry, claude is behind a velvet rope.
 hire me and i'll buy the VIP pass.`;
@@ -136,8 +170,7 @@ export const banner = (args?: string[]): string => {
 ░░█████████  ████ █████░░████████ ████ █████                     
  ░░░░░░░░░  ░░░░ ░░░░░  ░░░░░░░░ ░░░░ ░░░░░                      
 
+
 Type 'help' to see the list of available commands.
-Type 'about' to get started.
-${config.chat.active ? "Type 'chat' to talk to my AI assistant." : ''}
 `;
 };
