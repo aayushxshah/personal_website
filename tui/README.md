@@ -1,4 +1,4 @@
-# 🖥️ aayush.app — Personal Terminal Website
+# 🖥️ aayushshah.dev — Personal Terminal Website
 
 Welcome to my personal website!  
 This project is a playful, terminal-style web experience where you can explore my work and personality through commands.
